@@ -8,18 +8,18 @@
         /* Style to create a 3x2 grid for iPhone display */
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
         }
 
-        /* Style for the iframe container */
-        .iframe-container {
+        /* Style for each grid item */
+        .grid-item {
             position: relative;
             overflow: hidden;
-            padding-bottom: 75%; /* 4:3 aspect ratio for the iframe container */
+            padding-bottom: 100%; /* 1:1 aspect ratio for each item */
         }
 
-        /* Style to make iframe fill its container */
+        /* Style for iframes */
         iframe {
             position: absolute;
             top: 0;
@@ -29,62 +29,55 @@
             border: 0;
         }
 
-        /* Style for displaying page numbers */
-        .page-number {
-            font-weight: bold;
-            font-size: 18px;
-            text-align: center;
+        /* Style for the Atlas by EDG and Nominees text */
+        h1 {
+            font-size: 20px; /* Reduce font size for mobile */
+            color: red; /* Change text color to red */
         }
 
-        /* Media query for larger screens (e.g., PCs) */
-        @media screen and (min-width: 769px) {
-            .grid-container {
-                grid-template-columns: repeat(3, 1fr);
-            }
+        /* Style for the background */
+        body {
+            background-color: black; /* Set background color to black */
+            margin: 0; /* Remove default margin */
+            padding: 10px; /* Add some padding for better spacing */
         }
     </style>
 </head>
 <body>
-    <h1 style="font-size: 18px; text-align: center;">Atlas by EDG</h1>
-    <p style="font-size: 16px; text-align: center;">Nominees:</p>
+    <h1>Atlas by EDG</h1>
+    <p>Nominees:</p>
 
     <!-- Grid container for 3x2 layout -->
     <div class="grid-container">
         <!-- Page 1 -->
-        <div class="iframe-container">
+        <div class="grid-item">
             <iframe src="https://mazinaw.art/Atlas/Atlas_web.html?hash=0x54c5859189f1ac11bbfa82da4e571bdd0128f9c486d6cab0719c76250335c316" allowfullscreen></iframe>
         </div>
-        <div class="page-number">1</div>
 
         <!-- Page 2 -->
-        <div class="iframe-container">
+        <div class="grid-item">
             <iframe src="https://mazinaw.art/Atlas/Atlas_web.html?hash=0x83250ec79d46d1cf5332ee9ef130bfca3c576bc12860e0d32130f9908af92587" allowfullscreen></iframe>
         </div>
-        <div class="page-number">2</div>
 
         <!-- Page 3 -->
-        <div class="iframe-container">
+        <div class="grid-item">
             <iframe src="https://mazinaw.art/Atlas/Atlas_web.html?hash=0xd0fe726d635a5f25743ddbf1b4cb04385a6338d6615037f8c6a862ecb925a558" allowfullscreen></iframe>
         </div>
-        <div class="page-number">3</div>
 
         <!-- Page 4 -->
-        <div class="iframe-container">
+        <div class="grid-item">
             <iframe src="https://mazinaw.art/Atlas/Atlas_web.html?hash=0xa13b49485299cc1d0a337166703adaa84d16afdd7f967817d97cb12a12261002" allowfullscreen></iframe>
         </div>
-        <div class="page-number">4</div>
 
         <!-- Page 5 -->
-        <div class="iframe-container">
+        <div class="grid-item">
             <iframe src="https://mazinaw.art/Atlas/Atlas_web.html?hash=0x3c9e95c57c03e9255d1b08c58255bad9e33fca93593b72b39bbcdfa0097129fe" allowfullscreen></iframe>
         </div>
-        <div class="page-number">5</div>
 
         <!-- Page 6 -->
-        <div class="iframe-container">
+        <div class="grid-item">
             <iframe src="https://mazinaw.art/Atlas/Atlas_web.html?hash=0xa755231168c7ee64ed65e03fdda4b010482ae467f5c7f1ba913ab327ff9a70e2" allowfullscreen></iframe>
         </div>
-        <div class="page-number">6</div>
     </div>
 </body>
 </html>
