@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Nominees</title>
+    <style>
+        /* Style to create a 2x3 grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        /* Style for the iframe container */
+        .iframe-container {
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 75%; /* 4:3 aspect ratio for the iframe container */
+            background-color: black; /* Change background color to black */
+        }
+
+        /* Style for displaying page numbers */
+        .page-number {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* Style for header */
+        .header {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: red; /* Change font color to red */
+        }
+
+        /* Set background color for the entire webpage */
+        body {
+            background-color: black; /* Change background color to black */
+            margin: 0; /* Remove margin to occupy the entire viewport */
+            padding: 0; /* Remove padding to occupy the entire viewport */
+        }
+
+        /* Media query for smaller screens (e.g., iPhones) */
+        @media screen and (max-width: 768px) {
+            .iframe-container {
+                padding-bottom: 100%; /* Full height for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">Atlas by EDG</h1>
+    <p>Nominees:</p>
+
+    <!-- Grid container for 2x3 layout -->
+    <div class="grid-container">
+        <!-- Page 1 -->
+        <div class="iframe-container">
+            <iframe src="https://mazinaw.art/Atlas/Atlas_web.html?hash=0x54c5859189f1ac11bbfa82da4e571bdd0128f9c486d6cab0719c76250335c316" allowfullscreen></iframe>
+            <div class="page-number">1</div>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="iframe-container">
+            <iframe src="https://mazinaw.art/Atlas/Atlas_web.html?hash=0x83250ec79d46d1cf5332ee9ef130bfca3c576bc12860e0d32130f9908af92587" allowfullscreen></iframe>
+            <div class="page-number">2</div>
+        </div>
+
+        <!-- Page 3 -->
+        <div class="iframe-container">
+            <iframe src="https://mazinaw.art/Atlas/Atlas_web.html?hash=0xd0fe726d635a5f25743ddbf1b4cb04385a6338d6615037f8c6a862ecb925a558" allowfullscreen></iframe>
+            <div class="page-number">3</div>
+        </div>
+
+        <!-- Page 4 -->
+        <div class="iframe-container">
+            <iframe src="https://mazinaw.art/Atlas/Atlas_web.html?hash=0xa13b49485299cc1d0a337166703adaa84d16afdd7f967817d97cb12a12261002" allowfullscreen></iframe>
+            <div class="page-number">4</div>
+        </div>
+
+        <!-- Page 5 -->
+        <div class="iframe-container">
+            <iframe src="https://mazinaw.art/Atlas/Atlas_web.html?hash=0x3c9e95c57c03e9255d1b08c58255bad9e33fca93593b72b39bbcdfa0097129fe" allowfullscreen></iframe>
+            <div class="page-number">5</div>
+        </div>
+
+        <!-- Page 6 -->
+        <div class="iframe-container">
+            <iframe src="https://mazinaw.art/Atlas/Atlas_web.html?hash=0xa755231168c7ee64ed65e03fdda4b010482ae467f5c7f1ba913ab327ff9a70e2" allowfullscreen></iframe>
+            <div class="page-number">6</div>
+        </div>
+    </div>
+</body>
+</html>
